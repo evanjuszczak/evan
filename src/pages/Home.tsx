@@ -59,13 +59,37 @@ export function Home() {
           <FadeIn delay={100}>
             <div className="group">
               <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-pink-50 rounded-xl flex items-center justify-center shrink-0">
+                  <span className="text-sm font-medium text-pink-300">LL</span>
+                </div>
+                <div className="flex-1 pt-1">
+                  <div className="flex items-baseline gap-2 mb-1">
+                    <h4 className="text-base font-medium"> LocationLock | Geography Game </h4>
+                    <span className="text-sm text-gray-500">Apr 2025</span>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-2 leading-relaxed">
+                    A modern geography game that tests your knowledge in a fun, interactive way.
+                    Features real-world locations, interactive map exploration, and scoring based on proximity to the target.  
+                    Built with React, Typescript, Tailwind CSS, Leaflet and Mapillary API.
+                  </p>
+                  <a target="_blank" href="https://locationlock.vercel.app" className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-300 underline-offset-4 hover:underline">
+                    locationlock.vercel.app <ExternalLink className="inline ml-1" size={12} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={200}>
+            <div className="group">
+              <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center shrink-0">
                   <span className="text-sm font-medium text-purple-600">F</span>
                 </div>
                 <div className="flex-1 pt-1">
                   <div className="flex items-baseline gap-2 mb-1">
                     <h4 className="text-base font-medium"> Flashbear | Digital Study Tool </h4>
-                    <span className="text-sm text-gray-500">Feb 2025 — Present</span>
+                    <span className="text-sm text-gray-500">Feb 2025</span>
                   </div>
                   <p className="text-sm text-gray-600 mb-2 leading-relaxed">
                   Built with an intuitive interface for rapid card creation, smart import, and real-time progress tracking.
@@ -80,11 +104,11 @@ export function Home() {
             </div>
           </FadeIn>
 
-          <FadeIn delay={200}>
+          <FadeIn delay={300}>
             <div className="group">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center shrink-0">
-                  <span className="text-sm font-medium text-blue-600">L</span>
+                  <span className="text-sm font-medium text-blue-600">LMF</span>
                 </div>
                 <div className="flex-1 pt-1">
                   <div className="flex items-baseline gap-2 mb-1">
