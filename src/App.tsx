@@ -20,11 +20,11 @@ function App() {
           </Routes>
         </main>
 
-        {/* Footer */}
+        {}
         <footer className="max-w-2xl mx-auto px-6 py-8 border-t border-gray-100">
           <FadeIn>
             <p className="text-center text-sm text-gray-500">
-              {new Date().getFullYear()} &#9670; Evan Juszczak.
+              {new Date().getFullYear()} &#9670; Evan Juszczak
             </p>
           </FadeIn>
         </footer>
