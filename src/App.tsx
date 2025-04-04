@@ -4,6 +4,7 @@ import { Navigation } from './components/Navigation';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Education } from './pages/Education';
+import { ProjectDetail } from './pages/ProjectDetail';
 import { FadeIn } from './components/FadeIn';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/education" element={<Education />} />
+            <Route path="/project/:projectId" element={<ProjectDetail />} />
           </Routes>
         </main>
 
