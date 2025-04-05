@@ -14,36 +14,36 @@ export function Home() {
               <img 
                 src="/images/face.jpg" 
                 alt="Evan Juszczak" 
-                className="w-24 h-24 rounded-full object-cover border-2 border-gray-200"
+                className="w-24 h-24 rounded-full object-cover border-2 border-gray-200 dark:border-gray-700"
               />
             </div>
           </FadeIn>
           
           <div>
             <FadeIn>
-              <h1 className="text-4xl font-bold mb-2">Evan Juszczak</h1>
+              <h1 className="text-4xl font-bold mb-2 dark:text-white">Evan Juszczak</h1>
             </FadeIn>
             <FadeIn delay={100}>
-              <h2 className="text-xl text-gray-600">Studying Software Engineer</h2>
+              <h2 className="text-xl text-gray-600 dark:text-gray-300">Studying Software Engineer</h2>
             </FadeIn>
           </div>
         </div>
 
         <FadeIn delay={200}>
-          <p className="text-base text-gray-700 leading-relaxed">
+          <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
             I'm a freshman in college studying software engineering with 3+ years of experience, specializing in building web applications. 
             Currently focused on React, HTML, Javascript, TypeScript, and Python.
           </p>
         </FadeIn>
         <FadeIn delay={300}>
           <div className="flex gap-5 mt-6">
-            <a target="_blank" href="https://github.com/evanjuszczak" className="text-gray-500 hover:text-black transition-colors duration-300">
+            <a target="_blank" href="https://github.com/evanjuszczak" className="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors duration-300">
               <Github size={20} />
             </a>
-            <a target="_blank" href="https://www.linkedin.com/in/evan-juszczak-3b3812332" className="text-gray-500 hover:text-black transition-colors duration-300">
+            <a target="_blank" href="https://www.linkedin.com/in/evan-juszczak-3b3812332" className="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors duration-300">
               <Linkedin size={20} />
             </a>
-            <a target="_blank" href="mailto:juszczakevan@gmail.com" className="text-gray-500 hover:text-black transition-colors duration-300">
+            <a target="_blank" href="mailto:juszczakevan@gmail.com" className="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors duration-300">
               <Mail size={20} />
             </a>
           </div>
@@ -51,25 +51,25 @@ export function Home() {
       </header>
 
       {/* Projects Section */}
-      <section className="max-w-2xl mx-auto px-6 py-14 border-t border-gray-100">
+      <section className="max-w-2xl mx-auto px-6 py-14 border-t border-gray-100 dark:border-gray-800">
         <FadeIn>
-          <h3 className="text-lg font-semibold mb-10">Projects</h3>
+          <h3 className="text-lg font-semibold mb-10 dark:text-white">Projects</h3>
         </FadeIn>
         
         <div className="space-y-12">
           <FadeIn delay={100}>
             <Link to="/project/locationlock" className="block">
-              <div className="group border border-gray-200 rounded-lg p-4 hover:border-gray-300 transition-all hover:shadow-sm cursor-pointer relative">
+              <div className="group border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-gray-300 dark:hover:border-gray-600 transition-all hover:shadow-sm cursor-pointer relative bg-white dark:bg-gray-800">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-pink-50 rounded-xl flex items-center justify-center shrink-0">
-                    <span className="text-sm font-medium text-pink-300">LL</span>
+                  <div className="w-12 h-12 bg-pink-50 dark:bg-pink-900/20 rounded-xl flex items-center justify-center shrink-0">
+                    <span className="text-sm font-medium text-pink-300 dark:text-pink-200">LL</span>
                   </div>
                   <div className="flex-1 pt-1">
                     <div className="flex items-baseline gap-2 mb-1">
-                      <h4 className="text-base font-medium"> LocationLock | Geography Game </h4>
-                      <span className="text-sm text-gray-500">Apr 2025</span>
+                      <h4 className="text-base font-medium dark:text-white"> LocationLock | Geography Game </h4>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">Apr 2025</span>
                     </div>
-                    <p className="text-sm text-gray-600 mb-2 leading-relaxed">
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mb-2 leading-relaxed">
                       A modern geography game that tests your knowledge in a fun, interactive way.
                       Features real-world locations, interactive map exploration, and scoring based on proximity to the target.  
                       Built with React, Typescript, Tailwind CSS, Leaflet and Mapillary API.
@@ -77,7 +77,7 @@ export function Home() {
                     <a 
                       target="_blank" 
                       href="https://locationlock.vercel.app" 
-                      className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-300 underline-offset-4 hover:underline"
+                      className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-300 underline-offset-4 hover:underline"
                       onClick={(e) => {
                         e.preventDefault();
                         e.stopPropagation();
@@ -94,17 +94,17 @@ export function Home() {
 
           <FadeIn delay={200}>
             <Link to="/project/flashbear" className="block">
-              <div className="group border border-gray-200 rounded-lg p-4 hover:border-gray-300 transition-all hover:shadow-sm cursor-pointer relative">
+              <div className="group border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-gray-300 dark:hover:border-gray-600 transition-all hover:shadow-sm cursor-pointer relative bg-white dark:bg-gray-800">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center shrink-0">
-                    <span className="text-sm font-medium text-purple-600">F</span>
+                  <div className="w-12 h-12 bg-purple-50 dark:bg-purple-900/20 rounded-xl flex items-center justify-center shrink-0">
+                    <span className="text-sm font-medium text-purple-600 dark:text-purple-300">F</span>
                   </div>
                   <div className="flex-1 pt-1">
                     <div className="flex items-baseline gap-2 mb-1">
-                      <h4 className="text-base font-medium"> Flashbear | Digital Study Tool </h4>
-                      <span className="text-sm text-gray-500">Feb 2025</span>
+                      <h4 className="text-base font-medium dark:text-white"> Flashbear | Digital Study Tool </h4>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">Feb 2025</span>
                     </div>
-                    <p className="text-sm text-gray-600 mb-2 leading-relaxed">
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mb-2 leading-relaxed">
                     Built with an intuitive interface for rapid card creation, smart import, and real-time progress tracking.
                     Focused on efficiency and motivation to help users master subjects faster through practice, quizes, and games. 
                       Built with React, Typescript and Supabase, featuring sign ups, user profiles, and interactive visualizations.
@@ -112,7 +112,7 @@ export function Home() {
                     <a 
                       target="_blank" 
                       href="https://flashbear.vercel.app" 
-                      className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-300 underline-offset-4 hover:underline"
+                      className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-300 underline-offset-4 hover:underline"
                       onClick={(e) => {
                         e.preventDefault();
                         e.stopPropagation();
@@ -129,17 +129,17 @@ export function Home() {
 
           <FadeIn delay={300}>
             <Link to="/project/lmfree" className="block">
-              <div className="group border border-gray-200 rounded-lg p-4 hover:border-gray-300 transition-all hover:shadow-sm cursor-pointer relative">
+              <div className="group border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-gray-300 dark:hover:border-gray-600 transition-all hover:shadow-sm cursor-pointer relative bg-white dark:bg-gray-800">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center shrink-0">
-                    <span className="text-sm font-medium text-blue-600">LMF</span>
+                  <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/20 rounded-xl flex items-center justify-center shrink-0">
+                    <span className="text-sm font-medium text-blue-600 dark:text-blue-300">LMF</span>
                   </div>
                   <div className="flex-1 pt-1">
                     <div className="flex items-baseline gap-2 mb-1">
-                      <h4 className="text-base font-medium"> LMFree | Logo Maker </h4>
-                      <span className="text-sm text-gray-500">Dec 2024</span>
+                      <h4 className="text-base font-medium dark:text-white"> LMFree | Logo Maker </h4>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">Dec 2024</span>
                     </div>
-                    <p className="text-sm text-gray-600 mb-2 leading-relaxed">
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mb-2 leading-relaxed">
                     A free, no-frills logo maker for quick, custom designs—no experience needed.
                     Features a live editor for tweaking colors, icons, and sizes with instant previews.
                     Save logos to an account or export effortlessly in PNG, JPG, or SVG for any use case.
@@ -147,7 +147,7 @@ export function Home() {
                     <a 
                       target="_blank" 
                       href="https://lmfree.vercel.app" 
-                      className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-300 underline-offset-4 hover:underline"
+                      className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-300 underline-offset-4 hover:underline"
                       onClick={(e) => {
                         e.preventDefault();
                         e.stopPropagation();
@@ -165,9 +165,9 @@ export function Home() {
       </section>
 
       {/* Skills Section */}
-      <section className="max-w-2xl mx-auto px-6 py-14 border-t border-gray-100">
+      <section className="max-w-2xl mx-auto px-6 py-14 border-t border-gray-100 dark:border-gray-800">
         <FadeIn>
-          <h3 className="text-lg font-semibold mb-8">Skills</h3>
+          <h3 className="text-lg font-semibold mb-8 dark:text-white">Skills</h3>
         </FadeIn>
         
         <FadeIn delay={100}>
@@ -176,7 +176,7 @@ export function Home() {
               'JavaScript', 'TypeScript', 'React', 'Node.js', 
               'Supabase', 'Git'
             ].map((skill) => (
-              <div key={skill} className="bg-gray-50 px-3 py-2 rounded-md text-sm text-gray-700">
+              <div key={skill} className="bg-gray-50 dark:bg-gray-800 px-3 py-2 rounded-md text-sm text-gray-700 dark:text-gray-300">
                 {skill}
               </div>
             ))}

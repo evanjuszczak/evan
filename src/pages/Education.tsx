@@ -35,7 +35,7 @@ export function Education() {
   return (
     <div className="max-w-2xl mx-auto px-6 pt-24">
       <FadeIn>
-        <h1 className="text-4xl font-bold mb-8">Education</h1>
+        <h1 className="text-4xl font-bold mb-8 dark:text-white">Education</h1>
       </FadeIn>
 
       <div className="space-y-12">
@@ -43,9 +43,9 @@ export function Education() {
           <FadeIn key={edu.degree} delay={index * 100}>
             <div>
               <div className="mb-4">
-                <h2 className="text-xl font-semibold">{edu.degree}</h2>
+                <h2 className="text-xl font-semibold dark:text-white">{edu.degree}</h2>
                 <div className="flex items-center gap-2 mt-1">
-                  <span className="text-gray-600">{edu.school}</span>
+                  <span className="text-gray-600 dark:text-gray-300">{edu.school}</span>
                   {edu.schoolLogo && edu.schoolWebsite && (
                     <a 
                       href={edu.schoolWebsite} 
@@ -54,6 +54,7 @@ export function Education() {
                       title={`Visit ${edu.school} website`}
                       onMouseEnter={() => setHoveredLogo(edu.school)}
                       onMouseLeave={() => setHoveredLogo(null)}
+                      className="bg-white dark:bg-gray-800 rounded overflow-hidden"
                     >
                       <img 
                         src={edu.schoolLogo} 
@@ -67,18 +68,18 @@ export function Education() {
                       />
                     </a>
                   )}
-                  <span className="text-gray-400">•</span>
-                  <span className="text-gray-500">{edu.period}</span>
+                  <span className="text-gray-400 dark:text-gray-500">•</span>
+                  <span className="text-gray-500 dark:text-gray-400">{edu.period}</span>
                 </div>
               </div>
               
-              <p className="text-gray-700 mb-4 leading-relaxed">
+              <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
                 {edu.description}
               </p>
 
               <ul className="space-y-2">
                 {edu.achievements.map((achievement) => (
-                  <li key={achievement} className="text-gray-600 text-sm">
+                  <li key={achievement} className="text-gray-600 dark:text-gray-400 text-sm">
                     • {achievement}
                   </li>
                 ))}

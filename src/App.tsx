@@ -10,7 +10,7 @@ import { FadeIn } from './components/FadeIn';
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
         <Navigation />
         
         <main className="pt-16">
@@ -23,9 +23,9 @@ function App() {
         </main>
 
         {}
-        <footer className="max-w-2xl mx-auto px-6 py-8 border-t border-gray-100">
+        <footer className="max-w-2xl mx-auto px-6 py-8 border-t border-gray-100 dark:border-gray-800 transition-colors duration-300">
           <FadeIn>
-            <p className="text-center text-sm text-gray-500">
+            <p className="text-center text-sm text-gray-500 dark:text-gray-400">
               {new Date().getFullYear()} &#9670; Evan Juszczak
             </p>
           </FadeIn>

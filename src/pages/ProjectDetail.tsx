@@ -83,14 +83,14 @@ export function ProjectDetail() {
   }
 
   const colorClasses = {
-    pink: 'bg-pink-50 text-pink-300',
-    purple: 'bg-purple-50 text-purple-600',
-    blue: 'bg-blue-50 text-blue-600'
+    pink: 'bg-pink-50 text-pink-300 dark:bg-pink-900/20 dark:text-pink-200',
+    purple: 'bg-purple-50 text-purple-600 dark:bg-purple-900/20 dark:text-purple-300',
+    blue: 'bg-blue-50 text-blue-600 dark:bg-blue-900/20 dark:text-blue-300'
   };
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-16">
-      <Link to="/" className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-8">
+      <Link to="/" className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 mb-8">
         <ArrowLeft size={16} className="mr-2" /> Back to all projects
       </Link>
       
@@ -99,19 +99,19 @@ export function ProjectDetail() {
           <div className={`w-12 h-12 ${colorClasses[project.color as keyof typeof colorClasses]} rounded-xl flex items-center justify-center shrink-0`}>
             <span className="text-sm font-medium">{project.abbreviation}</span>
           </div>
-          <h1 className="text-2xl font-bold">{project.title}</h1>
+          <h1 className="text-2xl font-bold dark:text-white">{project.title}</h1>
         </div>
       </FadeIn>
       
       <FadeIn delay={100}>
-        <p className="text-gray-500 mb-6">{project.date}</p>
+        <p className="text-gray-500 dark:text-gray-400 mb-6">{project.date}</p>
       </FadeIn>
       
       {project.images && project.images.length > 0 && (
         <FadeIn delay={200}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
             {project.images.map((imageUrl, index) => (
-              <div key={index} className="overflow-hidden rounded-lg border border-gray-200">
+              <div key={index} className="overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700">
                 <img 
                   src={imageUrl} 
                   alt={`${project.title} - Preview ${index + 1}`} 
@@ -126,17 +126,17 @@ export function ProjectDetail() {
       
       <FadeIn delay={300}>
         <div className="prose max-w-none mb-8">
-          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
             {project.longDescription}
           </p>
         </div>
       </FadeIn>
       
       <FadeIn delay={400}>
-        <h2 className="text-xl font-semibold mb-3">Technologies</h2>
+        <h2 className="text-xl font-semibold mb-3 dark:text-white">Technologies</h2>
         <div className="flex flex-wrap gap-2 mb-8">
           {project.technologies.map((tech) => (
-            <span key={tech} className="bg-gray-50 px-3 py-1 rounded-md text-sm text-gray-700">
+            <span key={tech} className="bg-gray-50 dark:bg-gray-800 px-3 py-1 rounded-md text-sm text-gray-700 dark:text-gray-300">
               {tech}
             </span>
           ))}
@@ -150,7 +150,7 @@ export function ProjectDetail() {
               href={project.websiteUrl} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center gap-2 bg-black text-white dark:bg-white dark:text-black px-4 py-2 rounded-md hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
             >
               Visit Website <ExternalLink size={16} />
             </a>
@@ -161,7 +161,7 @@ export function ProjectDetail() {
               href={project.githubUrl} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gray-100 text-gray-800 px-4 py-2 rounded-md hover:bg-gray-200 transition-colors"
+              className="inline-flex items-center gap-2 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
             >
               View Code <Github size={16} />
             </a>
