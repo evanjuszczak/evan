@@ -66,7 +66,7 @@ export function Home() {
                   </div>
                   <div className="flex-1 pt-1">
                     <div className="flex items-baseline gap-2 mb-1">
-                      <h4 className="text-base font-medium dark:text-white"> ProofSettle | HackGB 2026 Winner </h4>
+                      <h4 className="text-base font-medium dark:text-white"> ProofSettle | Hackathon Winner </h4>
                       <span className="text-sm text-gray-500 dark:text-gray-400">Oct 2026</span>
                     </div>
                     <p className="text-sm text-gray-600 dark:text-gray-300 mb-2 leading-relaxed">

@@ -19,19 +19,19 @@ interface Project {
 
 // This is our project data - in a real app, you might fetch this from an API
 const projectsData: Record<string, Project> = {
-  'locationlock': {
-    title: 'LocationLock | Geography Game',
+  'proofsettle': {
+    title: 'ProofSettle | HackGB 2026 Winner, MLH Best on Solana',
     date: 'Apr 2025',
-    description: 'A modern geography game that tests your knowledge in a fun, interactive way. Features real-world locations, interactive map exploration, and scoring based on proximity to the target.',
-    longDescription: 'LocationLock challenges players to identify locations around the world based on street view imagery. The closer your guess to the actual location, the more points you earn. With multiple game modes, difficulty levels, and a global leaderboard, it\'s both educational and competitive.',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Leaflet', 'Mapillary API'],
-    websiteUrl: 'https://locationlock.vercel.app',
-    githubUrl: 'https://github.com/evanjuszczak/locationlock',
+    description: 'A contract-aware settlement platform for manufacturers and suppliers. Features AI-powered shipment inspection, agreement-based settlement proposals, and a tamper-evident audit trail.',
+    longDescription: 'ProofSettle connects shipment evidence, quality requirements, and financial adjustments in one workflow. AI analyzes delivery photos for damage, predefined compensation rules generate explainable settlement proposals, and both parties can review, accept, or dispute them. Evidence hashes and key decisions are recorded on-chain for verification, while ambiguous cases are flagged for human review.',
+    technologies: ['React', 'TypeScript', 'Python', 'FastAPI', 'Supabase', 'Solana'],
+    websiteUrl: 'https://proofsettle.vercel.app',
+    githubUrl: 'https://github.com/WillIAMShSp/proofsettle',
     color: 'pink',
-    abbreviation: 'LL',
+    abbreviation: 'PS',
     images: [
-      '/images/locationlock_picture.png',
-      '/images/locationlock_picture2.png'
+      '/images/proofsettle_picture.png',
+      '/images/proofsettle_picture2.png'
     ]
   },
   'flashbear': {
