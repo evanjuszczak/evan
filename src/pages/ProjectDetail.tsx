@@ -21,7 +21,7 @@ interface Project {
 const projectsData: Record<string, Project> = {
   'proofsettle': {
     title: 'ProofSettle | HackGB 2026 Winner, MLH Best on Solana',
-    date: 'Apr 2025',
+    date: 'Oct 2026',
     description: 'A contract-aware settlement platform for manufacturers and suppliers. Features AI-powered shipment inspection, agreement-based settlement proposals, and a tamper-evident audit trail.',
     longDescription: 'ProofSettle connects shipment evidence, quality requirements, and financial adjustments in one workflow. AI analyzes delivery photos for damage, predefined compensation rules generate explainable settlement proposals, and both parties can review, accept, or dispute them. Evidence hashes and key decisions are recorded on-chain for verification, while ambiguous cases are flagged for human review.',
     technologies: ['React', 'TypeScript', 'Python', 'FastAPI', 'Supabase', 'Solana'],
