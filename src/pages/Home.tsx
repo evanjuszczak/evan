@@ -58,33 +58,33 @@ export function Home() {
         
         <div className="space-y-12">
           <FadeIn delay={100}>
-            <Link to="/project/locationlock" className="block">
+            <Link to="/project/proofsettle" className="block">
               <div className="group border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-gray-300 dark:hover:border-gray-600 transition-all hover:shadow-sm cursor-pointer relative bg-white dark:bg-gray-800">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-pink-50 dark:bg-pink-900/20 rounded-xl flex items-center justify-center shrink-0">
-                    <span className="text-sm font-medium text-pink-300 dark:text-pink-200">LL</span>
+                    <span className="text-sm font-medium text-pink-300 dark:text-pink-200">PS</span>
                   </div>
                   <div className="flex-1 pt-1">
                     <div className="flex items-baseline gap-2 mb-1">
-                      <h4 className="text-base font-medium dark:text-white"> LocationLock | Geography Game </h4>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">Apr 2025</span>
+                      <h4 className="text-base font-medium dark:text-white"> ProofSettle | HackGB 2026 Winner </h4>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">Oct 2026</span>
                     </div>
                     <p className="text-sm text-gray-600 dark:text-gray-300 mb-2 leading-relaxed">
-                      A modern geography game that tests your knowledge in a fun, interactive way.
-                      Features real-world locations, interactive map exploration, and scoring based on proximity to the target.  
-                      Built with React, Typescript, Tailwind CSS, Leaflet and Mapillary API.
+                      A contract-aware settlement platform that turns shipment inspections into fair, explainable payment adjustments.
+                      Features AI-powered damage detection, agreement-based settlement proposals, buyer-supplier dispute resolution, and a tamper-evident blockchain audit trail.
+                      Built with React, TypeScript, Python, FastAPI, Supabase, Google Geminis vision model, and Solana smart contracts.
                     </p>
                     <a 
                       target="_blank" 
-                      href="https://locationlock.vercel.app" 
+                      href="https://proofsettle.vercel.app" 
                       className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-300 underline-offset-4 hover:underline"
                       onClick={(e) => {
                         e.preventDefault();
                         e.stopPropagation();
-                        window.open('https://locationlock.vercel.app', '_blank');
+                        window.open('https://proofsettle.vercel.app', '_blank');
                       }}
                     >
-                      locationlock.vercel.app <ExternalLink className="inline ml-1" size={12} />
+                      proofsettle.vercel.app <ExternalLink className="inline ml-1" size={12} />
                     </a>
                   </div>
                 </div>
