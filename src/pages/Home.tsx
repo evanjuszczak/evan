@@ -31,7 +31,7 @@ export function Home() {
 
         <FadeIn delay={200}>
           <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-            I'm a junior in college studying software engineering with 3+ years of experience, specializing in building web applications. 
+            I'm a junior in college studying software engineering with 5+ years of experience, specializing in building web applications. 
             Currently focused on React, HTML, Javascript, TypeScript, and Python.
           </p>
         </FadeIn>
