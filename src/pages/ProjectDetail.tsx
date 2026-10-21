@@ -12,6 +12,7 @@ interface Project {
   technologies: string[];
   websiteUrl: string;
   githubUrl: string;
+  devpostUrl?: string;
   color: 'pink' | 'purple' | 'blue';
   abbreviation: string;
   images: string[];
@@ -27,6 +28,7 @@ const projectsData: Record<string, Project> = {
     technologies: ['React', 'TypeScript', 'Python', 'FastAPI', 'Supabase', 'Solana'],
     websiteUrl: 'https://proofsettle.vercel.app',
     githubUrl: 'https://github.com/WillIAMShSp/proofsettle',
+    devpostUrl: 'https://devpost.com/software/proofsettle',
     color: 'pink',
     abbreviation: 'PS',
     images: [
@@ -164,6 +166,17 @@ export function ProjectDetail() {
               className="inline-flex items-center gap-2 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
             >
               View Code <Github size={16} />
+            </a>
+          )}
+
+          {project.devpostUrl && (
+            <a 
+              href={project.devpostUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+            >
+              View Devpost <ExternalLink size={16} />
             </a>
           )}
         </div>
