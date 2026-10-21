@@ -11,6 +11,7 @@ export function Education() {
       period: "2024 - Present",
       description: "Interested in Full-Stack Software Engineering, Application Development, and Cloud Computing.",
       achievements: [
+        "HackGB Hackathon 2026 Winner, MLH Best Use of Solana",
         "Built Personal Projects Developing Websites and Tools",
         "Fund for Wisconsin Scholars Grant Recipient",
         "4.0 GPA"
