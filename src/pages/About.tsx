@@ -13,7 +13,7 @@ export function About() {
           <div>
             <h2 className="text-xl font-semibold mb-4 dark:text-white">Background</h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              With over 3 years coding, I've developed a deep passion for creating elegant solutions to complex problems. My journey began with a fascination for technology and has evolved into a career focused on building modern, user-centric applications.
+              With over 5 years coding, I've developed a deep passion for creating elegant solutions to complex problems. My journey began with a fascination for technology and has evolved into a career focused on building modern, user-centric applications.
             </p>
           </div>
         </FadeIn>
